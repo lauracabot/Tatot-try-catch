@@ -1,0 +1,51 @@
+body {
+    background-color: #270620;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-image: url('https://img.freepik.com/vector-premium/tarot-magico-tarot-varios-simbolos-misticos_273828-1313.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; 
+}
+h1 {
+    color: white;
+}
+
+#pregunta {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+#boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(209, 194, 207);
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #ad17ad94;
+    font-size: 15px;
+}
+
+#boton:hover {
+    background-color: #8a2be2;
+}
+
+#resultado {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#resultado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

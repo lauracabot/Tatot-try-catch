@@ -3,58 +3,14 @@
  <head>
      <meta charset="UTF-8">
      <title>Tarot Místico 🔮</title>
-     <style>
-         body {
-             background-color: #1e1e1e;
-             color: #fff;
-             font-family: 'Arial', sans-serif;
-             text-align: center;
-             padding: 30px;
-         }
- 
-         #pregunta {
-             padding: 10px;
-             width: 300px;
-             border-radius: 8px;
-             border: none;
-         }
- 
-         #boton {
-             padding: 10px 20px;
-             border: none;
-             border-radius: 8px;
-             background-color: #6a0dad;
-             color: rgb(97, 14, 83);
-             cursor: pointer;
-             margin-left: 10px;
-         }
- 
-         #boton:hover {
-             background-color: #8a2be2;
-         }
- 
-         #resultado {
-             margin-top: 30px;
-             padding: 20px;
-             border-radius: 12px;
-             background-color: rgba(255, 255, 255, 0.1);
-             transition: opacity 0.5s ease, transform 0.5s ease;
-             opacity: 0;
-             transform: translateY(-10px);
-         }
- 
-         #resultado.visible {
-             opacity: 1;
-             transform: translateY(0);
-         }
- 
-     </style>
+     <link rel="stylesheet" href="style.css">
  </head>
  <body>
  
      <h1>Consulta al Tarot Místico 🔮</h1>
      <input type="text" id="pregunta" placeholder="Escribe tu pregunta aquí" />
- <button onclick="consultarTarot()">Consultar Tarot</button>
+     <button id="boton" onclick="consultarTarot()">Consultar Tarot</button>
+
  <div id="resultado"></div>
  
  
